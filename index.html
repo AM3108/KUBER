@@ -25,17 +25,22 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 .logo {
     width: 70vw; /* Responsive width based on viewport width */
     max-width: 1000px; /* Limit the maximum size on larger screens */
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto; /* Center horizontally and remove top margin */
+    padding: 0; /* Remove any padding */
     animation: zoomIn 2s ease-in-out; /* Apply zoom-in animation */
 }
 .subheading {
     font-size: 4vw; /* Responsive font size */
     letter-spacing: 0.3vw;
     animation: fadeIn 3s ease-in-out; /* Apply fade-in animation */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
 }
 
 /* Background Triangles */
@@ -94,21 +99,25 @@ body {
 @media (max-width: 1000px) {
     .logo {
         width: 80vw; /* Increase logo size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
     }
     .subheading {
-        font-size: 3vw; /* Reduce subheading size */
+        font-size: 4vw; /* Reduce subheading size */
         letter-spacing: 0.3vw;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .logo {
-        width: 100vw; /* Make logo take up maximum space on mobile */
+        width: 100vw; /* Make logo take up maximum width on mobile */
+        height: 100vw; /* Increase height to take up more vertical space */
         max-width: none; /* Remove max-width limit */
+        margin: 0;
+        margin-bottom: 5vw; /* Ensure no margin */
     }
     .subheading {
-        font-size: 2vw; /* Further reduce subheading size */
-        letter-spacing: 0.2vw;
+        font-size: 4vw; /* Further reduce subheading size */
+        letter-spacing: 0.3vw;
     }
     .triangle1, .triangle2 {
         display: none; /* Hide background triangles on very small screens */
