@@ -25,22 +25,28 @@ body {
     text-align: center;
     position: relative;
     z-index: 1;
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
+    width: 100%; /* Full width for the container */
+    height: 100%; /* Full height for the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .logo {
-    width: 70vw; /* Responsive width based on viewport width */
-    max-width: 1000px; /* Limit the maximum size on larger screens */
-    margin: 0 auto 20px auto; /* Center horizontally and remove top margin */
-    padding: 0; /* Remove any padding */
+    width: 25vw; /* Increase logo size on mobile */
+    max-width: none; /* Remove max-width */
+    max-height: 80vh; /* Adjust maximum height to fit the screen */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Small space below the logo */
     animation: zoomIn 2s ease-in-out; /* Apply zoom-in animation */
 }
 .subheading {
-    font-size: 4vw; /* Responsive font size */
+    font-size: 4vw; /* Small font size for the subheading */
     letter-spacing: 0.3vw;
     animation: fadeIn 3s ease-in-out; /* Apply fade-in animation */
     margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
+    padding: 0;
+    margin-top: 15px; /* Remove any default padding */
 }
 
 /* Background Triangles */
@@ -96,33 +102,22 @@ body {
 }
 
 /* Media Queries for Smaller Devices */
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .logo {
-        width: 80vw; /* Increase logo size for smaller screens */
+        width: 80vw; /* Almost full width on mobile */
+        max-height: 80vh; /* Constrain height to fit the screen better */
         height: auto; /* Maintain aspect ratio */
     }
     .subheading {
-        font-size: 4vw; /* Reduce subheading size */
-        letter-spacing: 0.3vw;
-    }
-}
-
-@media (max-width: 800px) {
-    .logo {
-        width: 100vw; /* Make logo take up maximum width on mobile */
-        height: 100vw; /* Increase height to take up more vertical space */
-        max-width: none; /* Remove max-width limit */
-        margin: 0;
-        margin-bottom: 5vw; /* Ensure no margin */
-    }
-    .subheading {
-        font-size: 4vw; /* Further reduce subheading size */
-        letter-spacing: 0.3vw;
+        font-size: 6vw; /* Keep subheading smaller */
+        letter-spacing: 0.4vw;
+        margin-top: 15px; /* Small margin above the subheading */
     }
     .triangle1, .triangle2 {
         display: none; /* Hide background triangles on very small screens */
     }
 }
+
 
 
     </style>
@@ -134,7 +129,7 @@ body {
 
     <div class="container">
         <!-- Logo Image -->
-        <img src="images/logo.png" alt="Kuber Investments Logo" class="logo">
+        <img src="images/ku.png" alt="Kuber Investments Logo" class="logo">
         <div class="subheading">
             KUBER₹ INVESTMENTS
         </div>
