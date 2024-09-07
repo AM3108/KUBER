@@ -4,140 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuber Investments</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom CSS */
-   
-/* Custom CSS */
-body {
-    background-color: #2D7F91; /* Blue-green background */
-    color: #FDB44D; /* Orange text */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-}
-.container {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    width: 100%; /* Full width for the container */
-    height: 100%; /* Full height for the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.logo {
-    width: 25vw; /* Increase logo size on mobile */
-    max-width: none; /* Remove max-width */
-    max-height: 80vh; /* Adjust maximum height to fit the screen */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Small space below the logo */
-    animation: zoomIn 2s ease-in-out; /* Apply zoom-in animation */
-}
-.subheading {
-    font-size: 4vw; /* Small font size for the subheading */
-    letter-spacing: 0.3vw;
-    animation: fadeIn 3s ease-in-out; /* Apply fade-in animation */
-    margin: 0; /* Remove any default margin */
-    padding: 0;
-    margin-top: 15px; /* Remove any default padding */
-}
+    <link href="./css/index.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
 
-/* Background Triangles */
-.triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    opacity: 0.3;
-    animation: moveTriangles 10s infinite alternate ease-in-out;
-}
-.triangle1 {
-    border-width: 100px 100px 0 0;
-    border-color: #FDB44D transparent transparent transparent;
-    top: 10%;
-    left: 15%;
-}
-.triangle2 {
-    border-width: 0 0 120px 120px;
-    border-color: transparent transparent #FDB44D transparent;
-    bottom: 10%;
-    right: 15%;
-}
-
-/* Animation Keyframes */
-@keyframes zoomIn {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes moveTriangles {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(30px, 30px);
-    }
-}
-
-/* Media Queries for Smaller Devices */
-@media (max-width: 600px) {
-    .logo{
-        width: 70vw; /* Almost full width on mobile */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .subheading {
-        font-size: 6vw; /* Keep subheading smaller */
-        letter-spacing: 0.4vw;
-        margin-top: 15px; /* Small margin above the subheading */
-    }
-    .triangle1, .triangle2 {
-        display: none; /* Hide background triangles on very small screens */
-    }
-}
-
-
-
-    </style>
-     <script>
+<!-- Font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+<!-- Bootstrap Java Query -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    <script>
         // JavaScript to redirect to soon.html after 15 seconds
-        setTimeout(function(){
-            window.location.href = "soon.html"; // Redirects to soon.html
-        }, 10000);
+        // setTimeout(function(){
+        //     window.location.href = "../KUBER/html/soon.html" // Redirects to soon.html
+        // }, 10000);
     </script>
 </head>
-<body>
-    <!-- Background Elements -->
-    <div class="triangle triangle1"></div>
-    <div class="triangle triangle2"></div>
-
-    <div class="container">
-        <!-- Logo Image -->
-        <img src="images/ku.png" alt="Kuber Investments Logo" class="logo">
-        <!-- <div class="subheading">
-            KUBER₹ INVESTMENTS
-        </div> -->
+<body class="indexbody">
+     <!-- Nav Bar -->
+     <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#footer"> Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Downloads</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="investment-banner">
+       
+        <div class="banner-content">
+            <h1 class="title">Investing for your future</h1>
+            <p class="description">
+                Investing is the process of putting your money to work today in order to grow your wealth over time.
+            </p>
+        </div>
+        <div class="banner-image-container">
+            <img src="./images/ku.png" alt="Person with megaphone" class="banner-image">
+        </div>
     </div>
+
+    <br/>
+    <br/>
+    <div class="about-section">
+        <h2 class="section-title">About</h2>
+        <h1 class="company-name">Kuber Investments</h1>
+        <div class="about-content">
+            <div class="about-image-container"> 
+                <img src="./images/profit.jpg" alt="Team working on investments" class="about-image">
+            </div>
+            <div class="text-content">
+                <p> At <strong>Kuber Investments</strong>, we specialize in providing a diverse range of investment solutions for individuals looking to grow and secure their financial future. Our mission is to offer trusted guidance and tailored services that align with each client's unique financial aspirations.</p>
+                <p>With a team of highly skilled investment experts, we are here to help you navigate your options and select the best investment opportunities for your goals. We’ll work closely with you to develop a personalized plan that ensures your investments are on track to meet your long-term objectives.</p>
+                <p>We also prioritize ongoing support, regularly reviewing your portfolio to adapt to changing market conditions, ensuring your investments continue to perform at their best.</p>
+                <p>In addition, we offer educational resources and financial insights to help you make informed decisions, empowering you to take control of your financial future with confidence.</p>
+            </div>
+        </div>
+    </div>
+
+   <!-- Testimonials -->
+
+   <section id="testimonials" class="color-section">
+
+    <div id="testimonialControls" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonials-heading">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class=dog-image src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonials-heading">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="dog-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonialControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#testimonialControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+    <div class="about-section">
+        <h1 class="company-name">Why choose Kuber Investments?</h1>
+        <div class="about-content">
+        <div class="why-choose-text">
+            <br/>
+            <br/>
+            <p>There are several compelling reasons to partner with <strong>Kuber Investments.</strong> Here are just a few:</p>
+            <ul>
+                <li>Our seasoned investment experts use a data-driven approach to ensure your investments are aligned with your financial goals.</li>
+                <br/>
+                <li>We provide customized investment strategies designed to suit your individual risk tolerance and long-term objectives.</li>
+                <br/>
+                <li>Our client-first philosophy means we prioritize transparent communication and proactive support at every step.</li>
+                <br/>
+                <li>We offer continuous portfolio monitoring and adjustment to help optimize your returns in ever-changing market conditions.</li>
+                <br/>
+            </ul>
+        </div>
+        <div class="why-choose-image-container">
+            <img src="./images/profit.jpg" alt="Reasons to Choose Us" class="why-choose-image">
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-column">
+            <h4>Regional Office :</h4>
+            <p>Shop No. 2, Navram Kutir, Prabhuram Nagar, Katemanivali, Kalyan East, Thane, Maharashtra, India – 421306</p>
+        </div>
+        <div class="footer-column">
+            <h4>Contact Information</h4>
+            <p><i class="fa fa-phone"></i> Phone: +91 751 751 5200</p>
+            <p><i class="fa fa-envelope"></i> mail: kuberinvestments01@gmail.com</p>
+        </div>
+        <div class="footer-column">
+            <h4>Other Links</h4>
+            <p><a href="#">News section</a></p>
+            <p><a href="#">Resources</a></p>
+            <p><a href="#">Disclaimer</a></p>
+        </div>
+    </div>
+    <div class="footer copyright">
+        <p>Copyright © 2024 Kuber Investments</p>
+    </div>
+    
+    <script src="./script/script.js"></script>
 </body>
 </html>

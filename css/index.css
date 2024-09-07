@@ -1,0 +1,297 @@
+/* Custom CSS */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+  h1, h2, h3{
+    font-family: "Montserrat-Bold",sans-serif;
+    font-weight: bold;
+  }
+  p{
+    padding: 1rem;
+    color: #8f8f8f;
+  
+  }
+ 
+#testimonials{
+    background-color: #2D7F91;
+  }
+
+.indexbody {
+    background-color: #2D7F91; /* Blue-green background */
+    color: #FDB44D; /* Orange text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.navbar{
+    padding: 0 0 4.5rem;
+    
+  }
+  .navbar-brand{
+    font-family: "Ubuntu",sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item{
+  padding: 0 18px;
+  }
+  .nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-light", sans-serif;
+  }
+
+.investment-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* No margins */
+    padding: 0; /* No padding */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.banner-content {
+    width: 50%; /* Adjust width if necessary */
+    padding-left: 10%; /* Adjust or remove padding if necessary */
+    animation: fadeInLeft 1s ease-out;
+}
+
+.banner-image-container {
+    flex: 1 1 60%;
+    max-width: 500px;
+    animation: fadeInLeft 1s ease-out;
+    padding-right: 10%;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Below is for other sections to ensure they start after the banner */
+.body-content {
+    width: 100vw;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #9fc080;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.company-name {
+    font-size: 2.5rem;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative; /* Needed for positioning the pseudo-element */
+}
+
+.company-name::after {
+    content: ''; /* Creates a pseudo-element */
+    display: block; /* Makes it a block to fill the space */
+    width: 100%; /* Matches the element's full width */
+    height: 3px; /* Height of the underline */
+    background-color: #DAA520; /* Gold color */
+    position: absolute; /* Positions absolutely within the relative parent */
+    bottom: -10px; /* Position below the text */
+    left: 0; /* Aligns left to the container */
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image-container {
+    flex: 1 1 40%;
+    max-width: 500px;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1 1 50%;
+    text-align: left;
+    padding: 20px;
+    animation: fadeInRight 1s ease-out;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* **********************Testimonials section ***********************************/
+.testimonials-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  .dog-image{
+    border-radius: 100%;
+    width: 10%;
+    margin: 1.25rem;
+  }
+  .carousel-inner{
+      padding: 7% 12%;
+  }
+/* Why Choose Section */
+.why-choose-section {
+    display: flex;
+    background-color: #f9f9f9;
+    color: #333333;
+    align-items: center;
+    justify-self: start;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* No margins */
+    padding: 0; /* No padding */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
+
+.why-choose-text {
+    width: 50%; /* Adjust width if necessary */
+    padding-left: 10%; /* Adjust or remove padding if necessary */
+    animation: fadeInLeft 1s ease-out;
+    text-align: left;
+}
+
+.why-choose-image-container {
+    flex: 1;
+}
+
+.why-choose-image {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer Section */
+.footer {
+    color: #ffffff; /* White text */
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px; /* Ensure minimum width to keep columns readable on smaller screens */
+    margin-bottom: 20px; /* Spacing between rows in mobile view */
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-column p, 
+.footer-column a {
+    color: #ffffff; /* Ensure the text is visible */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Indicate links on hover */
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #FDB44D; /* Orange color on hover */
+}
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 1px solid #ffffff;
+    font-size: 0.8rem;
+}
+

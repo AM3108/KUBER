@@ -1,0 +1,118 @@
+.indexbody {
+    background-color: #2D7F91; /* Blue-green background */
+    color: #FDB44D; /* Orange text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Full width for the container */
+    height: 100%; /* Full height for the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 25vw; /* Increase logo size on mobile */
+    max-width: none; /* Remove max-width */
+    max-height: 80vh; /* Adjust maximum height to fit the screen */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Small space below the logo */
+    animation: zoomIn 2s ease-in-out; /* Apply zoom-in animation */
+}
+.subheading {
+    font-size: 4vw; /* Small font size for the subheading */
+    letter-spacing: 0.3vw;
+    animation: fadeIn 3s ease-in-out; /* Apply fade-in animation */
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+    margin-top: 15px; /* Remove any default padding */
+}
+
+/* Background Triangles */
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    opacity: 0.3;
+    animation: moveTriangles 10s infinite alternate ease-in-out;
+}
+.triangle1 {
+    border-width: 100px 100px 0 0;
+    border-color: #FDB44D transparent transparent transparent;
+    top: 10%;
+    left: 15%;
+}
+.triangle2 {
+    border-width: 0 0 120px 120px;
+    border-color: transparent transparent #FDB44D transparent;
+    bottom: 10%;
+    right: 15%;
+}
+
+/* Animation Keyframes */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveTriangles {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(30px, 30px);
+    }
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 600px) {
+    .logo{
+        width: 70vw; /* Almost full width on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .subheading {
+        font-size: 6vw; /* Keep subheading smaller */
+        letter-spacing: 0.4vw;
+        margin-top: 15px; /* Small margin above the subheading */
+    }
+    .triangle1, .triangle2 {
+        display: none; /* Hide background triangles on very small screens */
+    }
+}
+<!-- Background Elements -->
+    <!-- <div class="triangle triangle1"></div>
+    <div class="triangle triangle2"></div>
+
+    <div class="container">
+        <!-- Logo Image -->
+        <!-- <img src="images/ku.png" alt="Kuber Investments Logo" class="logo"> -->
+        <!-- <div class="subheading">
+            KUBER₹ INVESTMENTS
+        </div> -->
+    <!-- </div> --> -->
