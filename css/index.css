@@ -19,6 +19,9 @@ body, html {
  
 #testimonials{
     background-color: #2D7F91;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center; 
   }
 
 .indexbody {
@@ -117,7 +120,7 @@ body, html {
 .about-section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF;
     color: #333333;
     width: 100%;
     box-sizing: border-box;
@@ -125,9 +128,13 @@ body, html {
 
 .section-title {
     font-size: 1.5rem;
-    color: #9fc080;
+    color: #FDB44D;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .company-name {
@@ -136,6 +143,13 @@ body, html {
     font-weight: bold;
     margin-bottom: 30px;
     position: relative; /* Needed for positioning the pseudo-element */
+}
+.special-color {
+    color: #FDB44D; /* Change this color to whatever you want */
+}
+
+.white-color {
+    color: #FFFFFF; /* Change this color to whatever you want */
 }
 
 .company-name::after {
@@ -194,8 +208,17 @@ body, html {
 
 /* **********************Testimonials section ***********************************/
 .testimonials-heading{
-    font-size: 3rem;
-    line-height: 1.5;
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .testimonials-subheading{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 1.8rem;
+    line-height: 0.8;
   }
   .dog-image{
     border-radius: 100%;
@@ -239,59 +262,49 @@ body, html {
 
 /* Footer Section */
 .footer {
-    color: #ffffff; /* White text */
-    padding: 40px 20px;
-    text-align: left;
+    color: #DAA520; /* White text */
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px; /* Spacing inside the footer */
+    width: 100vw;
 }
 
 .footer-column {
-    flex: 1;
-    min-width: 250px; /* Ensure minimum width to keep columns readable on smaller screens */
-    margin-bottom: 20px; /* Spacing between rows in mobile view */
+    flex: 1; 
+    padding-left: 8%;/* Basic flex grow to maintain structure */
 }
+
 
 .footer-column h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
+    margin-bottom: 2px; /* Space below the heading */
+    font-size: 18px; /* Heading font size */
+    text-transform: uppercase; /* Uppercase letters for headings */
+    font-weight: bold; /* Bold font weight for headings */
 }
 
-.footer-column p, 
-.footer-column a {
-    color: #ffffff; /* Ensure the text is visible */
-    font-size: 0.9rem;
-    line-height: 1.6;
-    text-decoration: none;
+.footer-column p {
+    font-size: 14px; /* Paragraph font size */
+    margin-bottom: 5px; /* Space below each paragraph */
+    line-height: 1.5; /* Line height for readability */
 }
 
-.footer-column a:hover {
-    text-decoration: underline; /* Indicate links on hover */
+.footer-bottom {
+    text-align: center; /* Center the text */
+    border-top: 1px solid #ffffff; /* White top border */
+    padding-top: 10px; /* Space above the text */
+    font-size: 12px; /* Font size for copyright text */
+    background-color: #00382E; /* Slightly darker background for contrast */
+    color: #ffffff; /* White text */
 }
 
-.footer .social-icons {
-    display: flex;
-    gap: 15px;
-}
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack the columns vertically on small screens */
+        text-align: center;
+    }
 
-.footer .social-icons a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    text-decoration: none;
+    .footer-column {
+        margin-bottom: 20px; /* Space between stacked columns */
+    }
 }
-
-.footer .social-icons a:hover {
-    color: #FDB44D; /* Orange color on hover */
-}
-
-.footer .copyright {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    border-top: 1px solid #ffffff;
-    font-size: 0.8rem;
-}
-

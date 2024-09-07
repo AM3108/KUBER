@@ -1,0 +1,232 @@
+/********************ID Tags**************/ 
+/* #pricing{
+  padding: 6.25rem;
+} */
+
+
+/******************Elements Tags******************/
+body{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+
+}
+h1, h2, h3{
+  font-family: "Montserrat-Bold",sans-serif;
+  font-weight: bold;
+}
+p{
+  padding: 1rem;
+  color: #8f8f8f;
+
+}
+
+body .navbar {
+    background-color: #2D7F91;
+    color: #FDB44D; /* Change to any color you like */
+}
+
+body .navbar-dark .navbar-nav .nav-link {
+    color: #FDB44D; /* Ensures this takes precedence over other similar styles */
+}
+
+
+/******************************************** Section *****************************************/
+.color-section{
+  background-color: #ff4c68;
+    color: #fff;
+}
+.white-section{
+    background-color: #ffff;
+}
+/* ***********************************Title******************************************* */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+.container{
+  padding: 0;
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu",sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+padding: 0 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light", sans-serif;
+}
+.navbar {
+    background-color: #FDB44D; /* Change to any color you like */
+}
+
+/* Navbar link colors */
+.navbar-dark .navbar-nav .nav-link {
+    color: #FDB44D; /* Change to any color you like */
+}
+.btn-download{
+  margin: 5% 3% 5% 0;
+}
+.title-image{
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+ }
+ /************************************* Features *************************************/
+ .features-paragraph{
+   color: #8f8f8f;
+ }
+ .pt:hover {
+     color: #ff4c68 !important;
+ }
+ .feature-box{
+   padding: 4.5%;
+ }
+ .features-h3{
+   font-size: 1.5rem;
+ }
+ .pad{
+   padding-right: 0;
+ }
+ /* **********************Testimonials section ***********************************/
+ .testimonials-heading{
+   font-size: 3rem;
+   line-height: 1.5;
+ }
+ .dog-image{
+   border-radius: 100%;
+   width: 10%;
+   margin: 1.25rem;
+ }
+ .carousel-inner{
+     padding: 7% 12%;
+ }
+ /******************************* Press Section *************************************/
+.press-image{
+  width: 15%;
+  margin: 20px 20px 50px ;
+}
+/****************************** Pricing******************************************** */
+.pricing-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-h3{
+  font-size: 1.5rem;
+}
+.price-button
+{
+  width: 100%;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+/************************************************ cta ******************************************/
+
+/****************************************** Footer ***********************************/
+.footer-image{
+  padding-left: 1rem;
+}
+/**************************************** @media query ************************************/
+
+@media (max-width:1028px) {
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+
+}
+
+
+
+.white-section {
+    background-color: #fff; /* Assuming a white background for the section */
+    text-align: center;
+  }
+  
+  .image-row {
+    display: flex; /* This will line up your images in a row */
+    justify-content: space-around; /* This will add space between the images */
+    align-items: center; /* Aligns images vertically in the center */
+    max-width: 1200px; /* Adjust based on your design needs */
+    margin: 0 auto; /* Center the row */
+  }
+  
+  .banner-image-container {
+    flex: 0 0 auto; /* Do not grow or shrink, base size off content */
+    padding: 10px; /* Optional: add padding around images */
+  }
+  
+  .banner-image {
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 40%; /* Max height for the images */
+  }
+
+/* Footer Section */
+.footer {
+    background-color: #2D7F91;
+    color: #DAA520; /* White text */
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Spacing inside the footer */
+    width: 100vw;
+}
+
+.footer-column {
+    flex: 1; 
+    padding-left: 8%;/* Basic flex grow to maintain structure */
+}
+
+
+.footer-column h4 {
+    margin-bottom: 2px; /* Space below the heading */
+    font-size: 18px; /* Heading font size */
+    text-transform: uppercase; /* Uppercase letters for headings */
+    font-weight: bold; /* Bold font weight for headings */
+}
+
+.footer-column p {
+    font-size: 14px; /* Paragraph font size */
+    margin-bottom: 5px; /* Space below each paragraph */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.footer-bottom {
+    text-align: center; /* Center the text */
+    border-top: 1px solid #ffffff; /* White top border */
+    padding-top: 10px; /* Space above the text */
+    font-size: 12px; /* Font size for copyright text */
+    background-color: #00382E; /* Slightly darker background for contrast */
+    color: #ffffff; /* White text */
+}
+
+/* Optional: Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack the columns vertically on small screens */
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px; /* Space between stacked columns */
+    }
+}
+.white-color {
+    color: #FFFFFF; /* Change this color to whatever you want */
+}
+
+
