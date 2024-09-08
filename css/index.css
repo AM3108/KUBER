@@ -59,7 +59,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
     margin: 0; /* No margins */
     padding: 0; /* No padding */
     position: relative;
@@ -68,15 +68,15 @@ body, html {
 
 .banner-content {
     width: 50%; /* Adjust width if necessary */
-    padding-left: 10%; /* Adjust or remove padding if necessary */
+    padding-left: 5%; /* Adjust or remove padding if necessary */
     animation: fadeInLeft 1s ease-out;
 }
 
 .banner-image-container {
     flex: 1 1 60%;
-    max-width: 500px;
+    max-width: 600px;
     animation: fadeInLeft 1s ease-out;
-    padding-right: 10%;
+    padding-left: 5%;
 }
 
 .banner-image {
@@ -191,9 +191,6 @@ body, html {
     animation: fadeInRight 1s ease-out;
 }
 
-.text-content p {
-    margin-bottom: 20px;
-}
 
 @keyframes fadeInRight {
     from {
@@ -225,7 +222,7 @@ body, html {
     line-height: 1.5;
   } 
   .carousel-inner{
-      padding: 7% 12%;
+      padding: 2% 12%;
   }
 
   .carousel-item {

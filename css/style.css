@@ -100,8 +100,9 @@ padding: 0 18px;
  }
  /* **********************Testimonials section ***********************************/
  .testimonials-heading{
-   font-size: 3rem;
+   font-size: 1.5rem;
    line-height: 1.5;
+   color: chocolate;
  }
  .dog-image{
    border-radius: 100%;
@@ -120,6 +121,7 @@ padding: 0 18px;
 .pricing-heading{
   font-size: 3rem;
   line-height: 1.5;
+  color: chocolate;
 }
 .pricing-h3{
   font-size: 1.5rem;
