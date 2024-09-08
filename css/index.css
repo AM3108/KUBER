@@ -208,26 +208,62 @@ body, html {
 
 /* **********************Testimonials section ***********************************/
 .testimonials-heading{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-size: 2rem;
-    line-height: 1;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 200;
   }
 
   .testimonials-subheading{
     font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
-    font-size: 1.8rem;
-    line-height: 0.8;
-  }
-  .dog-image{
-    border-radius: 100%;
-    width: 10%;
-    margin: 1.25rem;
-  }
+    font-size: 1.5rem;
+    line-height: 1.5;
+  } 
   .carousel-inner{
       padding: 7% 12%;
   }
+
+  .carousel-item {
+    text-align: center; /* Center everything within the carousel item */
+    padding: 20px; /* Add some padding around the content */
+}
+
+.testimonial-info {
+    display: inline-block; /* Center the content horizontally */
+    text-align: center; 
+    width: 100%; /* Ensure it spans the full width for consistent alignment */
+}
+
+.testimonial-image {
+    width: 10%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensure the image is perfectly circular */
+    margin: 1.25rem auto; /* Center margin horizontally and add space */
+    display: block; /* Block display to allow vertical stacking of text below */
+}
+
+.testimonial-name-location {
+    display: block; /* Change from inline-block to block to stack under the image */
+    margin-top: 0; /* Adjust if needed */
+    text-align: center; /* Ensure text alignment is centered under the image */
+}
+
+.testimonial-location {
+    display: block; /* Keep the location on a new line below the name */
+    margin-top: 5px; /* Space between name and location */
+    font-size: 0.9rem; /* Smaller font size for location */
+}
+
+img.map-pin {
+    filter: invert(67%) sepia(81%) saturate(358%) hue-rotate(345deg) brightness(97%) contrast(105%);
+}
+
+
 /* Why Choose Section */
 .why-choose-section {
     display: flex;

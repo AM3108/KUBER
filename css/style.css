@@ -167,7 +167,7 @@ padding: 0 18px;
   
   .banner-image-container {
     flex: 0 0 auto; /* Do not grow or shrink, base size off content */
-    padding: 10px; /* Optional: add padding around images */
+    padding: 20px; /* Optional: add padding around images */
   }
   
   .banner-image {
