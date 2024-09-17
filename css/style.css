@@ -102,7 +102,7 @@ padding: 0 18px;
  .testimonials-heading{
    font-size: 1.5rem;
    line-height: 1.5;
-   color: chocolate;
+   color: #123B78;
  }
  .dog-image{
    border-radius: 100%;
@@ -121,7 +121,7 @@ padding: 0 18px;
 .pricing-heading{
   font-size: 3rem;
   line-height: 1.5;
-  color: chocolate;
+  color: #123B78;
 }
 .pricing-h3{
   font-size: 1.5rem;
@@ -132,6 +132,26 @@ padding: 0 18px;
 }
 .pricing-column{
   padding: 3% 2%;
+}
+
+.company-name {
+  font-size: 2.5rem;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-bottom: 10px;
+  position: relative; /* Needed for positioning the pseudo-element */
+}
+
+.company-name::after {
+  content: ''; /* Creates a pseudo-element */
+  display: block; /* Makes it a block to fill the space */
+  width: 100%; /* Matches the element's full width */
+  height: 3px; /* Height of the underline */
+  background-color: #DAA520; /* Gold color */
+  position: absolute; /* Positions absolutely within the relative parent */
+  bottom: -10px; /* Position below the text */
+  left: 0; /* Aligns left to the container */
 }
 /************************************************ cta ******************************************/
 
@@ -169,7 +189,7 @@ padding: 0 18px;
   
   .banner-image-container {
     flex: 0 0 auto; /* Do not grow or shrink, base size off content */
-    padding: 20px; /* Optional: add padding around images */
+    padding: 4%; /* Optional: add padding around images */
   }
   
   .banner-image {
@@ -177,56 +197,79 @@ padding: 0 18px;
     height: auto; /* Maintain aspect ratio */
     max-height: 40%; /* Max height for the images */
   }
-
 /* Footer Section */
 .footer {
-    background-color: #2D7F91;
-    color: #DAA520; /* White text */
-    display: flex;
-    justify-content: center;
-    padding: 20px; /* Spacing inside the footer */
-    width: 100vw;
+  background-color: #2D7F91;
+  color: #DAA520; /* White text */
+  display: flex;
+  justify-content: center;
+  padding: 20px; /* Spacing inside the footer */
+  width: 100vw;
 }
 
 .footer-column {
-    flex: 1; 
-    padding-left: 8%;/* Basic flex grow to maintain structure */
+  flex: 1; 
+  padding-left: 8%;/* Basic flex grow to maintain structure */
 }
 
 
 .footer-column h4 {
-    margin-bottom: 2px; /* Space below the heading */
-    font-size: 18px; /* Heading font size */
-    text-transform: uppercase; /* Uppercase letters for headings */
-    font-weight: bold; /* Bold font weight for headings */
+  margin-bottom: 2px; /* Space below the heading */
+  font-size: 18px; /* Heading font size */
+  text-transform: uppercase; /* Uppercase letters for headings */
+  font-weight: bold; /* Bold font weight for headings */
 }
 
 .footer-column p {
-    font-size: 14px; /* Paragraph font size */
-    margin-bottom: 5px; /* Space below each paragraph */
-    line-height: 1.5; /* Line height for readability */
+  font-size: 14px; /* Paragraph font size */
+  margin-bottom: 5px; /* Space below each paragraph */
+  line-height: 1.5; /* Line height for readability */
 }
 
 .footer-bottom {
-    text-align: center; /* Center the text */
-    border-top: 1px solid #ffffff; /* White top border */
-    padding-top: 10px; /* Space above the text */
-    font-size: 12px; /* Font size for copyright text */
-    background-color: #00382E; /* Slightly darker background for contrast */
-    color: #ffffff; /* White text */
+  text-align: center; /* Center the text */
+  border-top: 1px solid #ffffff; /* White top border */
+  padding-top: 10px; /* Space above the text */
+  font-size: 12px; /* Font size for copyright text */
+  background-color: #00382E; /* Slightly darker background for contrast */
+  color: #ffffff; /* White text */
+}
+
+.location-info {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically aligns items in the flex container */
+  margin-bottom: 5px; /* Optional: adds some space below the location info */
+}
+
+.location-info img {
+  margin-right: 10px; /* Adds space between the image and the address text */
+}
+
+.address {
+  display: flex; /* Stacks address lines vertically */
+  flex-direction: column; /* Aligns address info in a column */
+}
+
+.address h6 {
+  margin: 0; /* Removes default margins */
+  line-height: 1.4; /* Adjust line height for better readability */
+  color: white; /* Ensures text is white, can be moved to a class */
 }
 
 /* Optional: Responsive adjustments */
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column; /* Stack the columns vertically on small screens */
-        text-align: center;
-    }
+  .footer {
+      flex-direction: column; /* Stack the columns vertically on small screens */
+      text-align: center;
+  }
 
-    .footer-column {
-        margin-bottom: 20px; /* Space between stacked columns */
-    }
+  .footer-column {
+      margin-bottom: 20px; /* Space between stacked columns */
+  }
 }
+
+
+
 .white-color {
     color: #FFFFFF; /* Change this color to whatever you want */
 }

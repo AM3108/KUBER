@@ -85,6 +85,27 @@ body, html {
     object-fit: cover;
 }
 
+@media (max-width: 576px) {
+    .investment-banner {
+        flex-direction: column; /* Stack children vertically */
+        height: auto; /* Adjust height to fit content */
+        padding: 20px 0; /* Add vertical padding */
+    }
+
+    .banner-image-container {
+        width: 100%; /* Take full width */
+        max-width: none; /* Remove max-width restriction */
+        padding-left: 0; /* Remove padding */
+    }
+
+    .banner-content {
+        width: 90%; /* Adjust content width for readability */
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center align the text */
+        animation: none; /* Disable animation for simpler appearance */
+    }
+}
+
 @keyframes fadeInLeft {
     from {
         opacity: 0;
@@ -191,6 +212,25 @@ body, html {
     animation: fadeInRight 1s ease-out;
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+    .about-content {
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .about-image-container {
+        flex: 0 0 100%; /* Take full width and do not grow or shrink */
+        max-width: none; /* Remove max-width restriction */
+        order: -1; /* Position it before the text content */
+    }
+
+    .text-content {
+        flex: 0 0 100%; /* Take full width and do not grow or shrink */
+        text-align: center; /* Center the text for better readability on small screens */
+        padding: 10px; /* Adjust padding */
+        animation: none; /* Disable animation for a simpler appearance */
+    }
+}
 
 @keyframes fadeInRight {
     from {
@@ -221,6 +261,10 @@ body, html {
     font-size: 1.5rem;
     line-height: 1.5;
   } 
+  /* .color-section{
+    width: 100vw;
+    height: 100vw;
+  } */
   .carousel-inner{
       padding: 2% 12%;
   }
@@ -292,6 +336,29 @@ img.map-pin {
     height: auto;
     object-fit: contain;
 }
+@media (max-width: 576px) {
+    .why-choose-section {
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .why-choose-text {
+        width: 100%; /* Take full width */
+        padding: 20px; /* Adjust padding for better spacing */
+        text-align: center; /* Center the text for better readability on small screens */
+        order: 2; /* Ensures text is below the image */
+    }
+
+    .why-choose-image-container {
+        order: 1; /* Image appears first */
+        width: 100%; /* Ensure the container takes the full width */
+        display: flex;
+        justify-content: center; /* Center the image within the container */
+    }
+
+    .why-choose-image {
+        width: 90%; /* Adjust image width for mobile */
+    }
+}
 
 /* Footer Section */
 .footer {
@@ -328,6 +395,27 @@ img.map-pin {
     font-size: 12px; /* Font size for copyright text */
     background-color: #00382E; /* Slightly darker background for contrast */
     color: #ffffff; /* White text */
+}
+
+.location-info {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns items in the flex container */
+    margin-bottom: 5px; /* Optional: adds some space below the location info */
+}
+
+.location-info img {
+    margin-right: 10px; /* Adds space between the image and the address text */
+}
+
+.address {
+    display: flex; /* Stacks address lines vertically */
+    flex-direction: column; /* Aligns address info in a column */
+}
+
+.address h6 {
+    margin: 0; /* Removes default margins */
+    line-height: 1.4; /* Adjust line height for better readability */
+    color: white; /* Ensures text is white, can be moved to a class */
 }
 
 /* Optional: Responsive adjustments */
