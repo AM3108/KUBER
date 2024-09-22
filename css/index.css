@@ -480,4 +480,25 @@ img.map-pin {
     .footer-column {
         margin-bottom: 20px; /* Space between stacked columns */
     }
+    .footer-column h4 {
+        margin-bottom: 2px; /* Space below the heading */
+        font-size: 14px; /* Heading font size */
+        text-transform: uppercase; /* Uppercase letters for headings */
+        font-weight: bold; /* Bold font weight for headings */
+    }
+    .footer-column p {
+        font-size: 10px; /* Paragraph font size */
+        margin-bottom: 5px; /* Space below each paragraph */
+        line-height: 1.5; /* Line height for readability */
+    }
+    
+    .footer-bottom {
+        text-align: center; /* Center the text */
+        border-top: 1px solid #ffffff; /* White top border */
+        padding-top: 10px; /* Space above the text */
+        font-size: 8px; /* Font size for copyright text */
+        background-color: #00382E; /* Slightly darker background for contrast */
+        color: #ffffff; /* White text */
+    }
+    
 }
