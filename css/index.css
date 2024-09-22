@@ -414,91 +414,102 @@ img.map-pin {
 
 /* Footer Section */
 .footer {
-    color: #DAA520; /* White text */
+    color: #DAA520;
     display: flex;
     justify-content: center;
-    padding: 20px; /* Spacing inside the footer */
+    flex-wrap: wrap; /* Ensure columns wrap in small screens */
+    padding: 20px;
     width: 100vw;
 }
 
 .footer-column {
-    flex: 1; 
-    padding-left: 8%;/* Basic flex grow to maintain structure */
+    flex: 1;
+    padding-left: 8%;
+    max-width: 100%; /* Prevent overflow on smaller screens */
+    text-align: left; /* Default alignment for larger screens */
 }
-
 
 .footer-column h4 {
-    margin-bottom: 2px; /* Space below the heading */
-    font-size: 18px; /* Heading font size */
-    text-transform: uppercase; /* Uppercase letters for headings */
-    font-weight: bold; /* Bold font weight for headings */
+    margin-bottom: 2px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.footer-column p {
-    font-size: 14px; /* Paragraph font size */
-    margin-bottom: 5px; /* Space below each paragraph */
-    line-height: 1.5; /* Line height for readability */
+.footer-column p,
+.footer-column h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.5;
 }
 
 .footer-bottom {
-    text-align: center; /* Center the text */
-    border-top: 1px solid #ffffff; /* White top border */
-    padding-top: 10px; /* Space above the text */
-    font-size: 12px; /* Font size for copyright text */
-    background-color: #00382E; /* Slightly darker background for contrast */
-    color: #ffffff; /* White text */
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    font-size: 12px;
+    background-color: #00382E;
+    color: #ffffff;
 }
 
 .location-info {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Vertically aligns items in the flex container */
-    margin-bottom: 5px; /* Optional: adds some space below the location info */
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .location-info img {
-    margin-right: 10px; /* Adds space between the image and the address text */
+    margin-right: 10px;
 }
 
 .address {
-    display: flex; /* Stacks address lines vertically */
-    flex-direction: column; /* Aligns address info in a column */
+    display: flex;
+    flex-direction: column;
 }
 
 .address h6 {
-    margin: 0; /* Removes default margins */
-    line-height: 1.4; /* Adjust line height for better readability */
-    color: white; /* Ensures text is white, can be moved to a class */
+    margin: 0;
+    line-height: 1.4;
+    color: white;
 }
 
-/* Optional: Responsive adjustments */
+/* Optional: Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
     .footer {
-        flex-direction: column; /* Stack the columns vertically on small screens */
-        text-align: center;
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center all elements */
+        text-align: center; /* Ensure text is centered */
     }
 
     .footer-column {
-        margin-bottom: 20px; /* Space between stacked columns */
+        margin-bottom: 20px;
+        padding-left: 0; /* Remove padding for mobile */
+        max-width: 100%; /* Ensure columns don’t overflow */
     }
+
     .footer-column h4 {
-        margin-bottom: 2px; /* Space below the heading */
-        font-size: 14px; /* Heading font size */
-        text-transform: uppercase; /* Uppercase letters for headings */
-        font-weight: bold; /* Bold font weight for headings */
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
-    .footer-column p {
-        font-size: 10px; /* Paragraph font size */
-        margin-bottom: 5px; /* Space below each paragraph */
-        line-height: 1.5; /* Line height for readability */
+
+    .footer-column p,
+    .footer-column h6 {
+        font-size: 12px; /* Make text slightly smaller */
+        margin-bottom: 5px;
+        line-height: 1.5;
     }
-    
+
+    .location-info {
+        justify-content: center; /* Center location info */
+    }
+
+    .location-info img {
+        margin-right: 5px; /* Smaller margin on mobile */
+    }
+
     .footer-bottom {
-        text-align: center; /* Center the text */
-        border-top: 1px solid #ffffff; /* White top border */
-        padding-top: 10px; /* Space above the text */
-        font-size: 8px; /* Font size for copyright text */
-        background-color: #00382E; /* Slightly darker background for contrast */
-        color: #ffffff; /* White text */
+        font-size: 10px; /* Smaller font for mobile */
+        padding-top: 10px;
     }
-    
 }
