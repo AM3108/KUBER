@@ -230,6 +230,17 @@ body, html {
         padding: 10px; /* Adjust padding */
         animation: none; /* Disable animation for a simpler appearance */
     }
+    .company-name {
+        font-size: 2rem;
+        color: #333333;
+        font-weight: bold;
+        margin-bottom: 30px;
+        position: relative; /* Needed for positioning the pseudo-element */
+    }
+    .special-color {
+        color: #FDB44D; /* Change this color to whatever you want */
+    }
+
 }
 
 @keyframes fadeInRight {
@@ -288,6 +299,7 @@ body, html {
     display: block; /* Block display to allow vertical stacking of text below */
 }
 
+
 .testimonial-name-location {
     display: block; /* Change from inline-block to block to stack under the image */
     margin-top: 0; /* Adjust if needed */
@@ -303,6 +315,45 @@ body, html {
 img.map-pin {
     filter: invert(67%) sepia(81%) saturate(358%) hue-rotate(345deg) brightness(97%) contrast(105%);
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 576px) {
+    .testimonials-subheading{
+        font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .testimonial-image {
+        width: 40%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Ensure the image is perfectly circular */
+        margin: 1.25rem auto; /* Center margin horizontally and add space */
+        display: block; /* Block display to allow vertical stacking of text below */
+    }
+      
+      .font-h1{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: bold;
+          font-size: 2rem;
+          line-height: 1.5;
+      }
+
+      .testimonials-heading{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-style: normal;
+        font-weight: 200;
+      }
+
+    }
 
 
 /* Why Choose Section */
