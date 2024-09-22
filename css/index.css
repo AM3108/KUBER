@@ -413,71 +413,73 @@ img.map-pin {
 }
 
 /* Footer Section */
+/* Footer Section */
 .footer {
     color: #DAA520;
     display: flex;
+    background-color: #2D7F91;
     justify-content: center;
     flex-wrap: wrap; /* Ensures columns wrap in smaller screens */
     padding: 20px;
     width: 100vw;
-}
-
-.footer-column {
+  }
+  
+  .footer-column {
     flex: 1;
     padding: 0 20px; /* Even padding on the sides to balance columns */
     max-width: 100%; /* Prevent columns from overflowing */
     text-align: left;
-}
-
-.footer-column h4, .footer-column h6 {
+  }
+  
+  .footer-column h4, .footer-column h6 {
     white-space: nowrap; /* Prevents text from wrapping into two lines */
-}
-
-.footer-column h6 {
+  }
+  
+  .footer-column h6 {
     font-size: 14px;
     margin-bottom: 5px;
     line-height: 1.5;
-}
-
-.footer-bottom {
+  }
+  
+  .footer-bottom {
     text-align: center;
     border-top: 1px solid #ffffff;
     padding-top: 10px;
     font-size: 12px;
     background-color: #00382E;
     color: #ffffff;
-}
-
-.location-info {
+  }
+  
+  .location-info {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-}
-
-.location-info img {
+  }
+  
+  .location-info img {
     margin-right: 10px;
-}
-
-.address {
+  }
+  
+  .address {
     display: flex;
     flex-direction: column;
-}
-
-.address h6 {
+  }
+  
+  .address h6 {
     margin: 0;
     line-height: 1.4;
     color: white;
-}
-
-
-/* Optional: Responsive adjustments for mobile screens */
-@media (max-width: 768px) {
+  }
+  
+  
+  /* Optional: Responsive adjustments for mobile screens */
+  @media (max-width: 768px) {
     .footer {
         flex-direction: column; /* Stack columns vertically */
         align-items: center;
         text-align: center;
     }
-
+  
     .footer-column {
         margin-bottom: 20px;
         padding-left: 0;
@@ -485,15 +487,15 @@ img.map-pin {
         text-align: center; /* Center text in smaller screens */
         max-width: 100%;
     }
-
+  
     .footer-column h4 {
         font-size: 14px;
     }
-
+  
     .footer-column h6 {
         font-size: 12px;
     }
-
+  
     .footer-bottom {
         font-size: 10px;
         padding-top: 10px;
@@ -501,8 +503,8 @@ img.map-pin {
     .location-info {
         justify-content: center; /* Center location info */
     }
-
+  
     .location-info img {
         margin-right: 5px; /* Smaller margin on mobile */
     }
-}
+  }
