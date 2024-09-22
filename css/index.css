@@ -85,7 +85,7 @@ body, html {
     object-fit: cover;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .investment-banner {
         flex-direction: column; /* Stack children vertically */
         height: auto; /* Adjust height to fit content */
@@ -213,7 +213,7 @@ body, html {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .about-content {
         flex-direction: column; /* Stack children vertically */
     }
@@ -317,7 +317,7 @@ img.map-pin {
 }
 
 /* Media Query for Mobile Devices */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .testimonials-subheading{
         font-family: "Montserrat", sans-serif;
       font-optical-sizing: auto;
@@ -387,7 +387,7 @@ img.map-pin {
     height: auto;
     object-fit: contain;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .why-choose-section {
         flex-direction: column; /* Stack children vertically */
     }

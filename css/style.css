@@ -161,7 +161,7 @@ padding: 0 18px;
   left: 0; /* Aligns left to the container */
 }
 /* Media Query for Mobile Devices */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
   .company-name {
       font-size: 2rem;
