@@ -224,6 +224,7 @@ padding: 0 18px;
 .footer {
   color: #DAA520;
   display: flex;
+  background-color: #2D7F91;
   justify-content: center;
   flex-wrap: wrap; /* Ensures columns wrap in smaller screens */
   padding: 20px;
