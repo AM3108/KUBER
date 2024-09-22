@@ -342,6 +342,7 @@ img.map-pin {
         font-style: bold;
           font-size: 2rem;
           line-height: 1.5;
+          padding-bottom: 1rem;
       }
 
       .testimonials-heading{
