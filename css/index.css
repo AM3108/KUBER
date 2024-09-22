@@ -417,26 +417,22 @@ img.map-pin {
     color: #DAA520;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Ensure columns wrap in small screens */
+    flex-wrap: wrap; /* Ensures columns wrap in smaller screens */
     padding: 20px;
     width: 100vw;
 }
 
 .footer-column {
     flex: 1;
-    padding-left: 8%;
-    max-width: 100%; /* Prevent overflow on smaller screens */
-    text-align: left; /* Default alignment for larger screens */
+    padding: 0 20px; /* Even padding on the sides to balance columns */
+    max-width: 100%; /* Prevent columns from overflowing */
+    text-align: left;
 }
 
-.footer-column h4 {
-    margin-bottom: 2px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
+.footer-column h4, .footer-column h6 {
+    white-space: nowrap; /* Prevents text from wrapping into two lines */
 }
 
-.footer-column p,
 .footer-column h6 {
     font-size: 14px;
     margin-bottom: 5px;
@@ -473,43 +469,40 @@ img.map-pin {
     color: white;
 }
 
+
 /* Optional: Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column; /* Stack columns vertically */
-        align-items: center; /* Center all elements */
-        text-align: center; /* Ensure text is centered */
+        align-items: center;
+        text-align: center;
     }
 
     .footer-column {
         margin-bottom: 20px;
-        padding-left: 0; /* Remove padding for mobile */
-        max-width: 100%; /* Ensure columns don’t overflow */
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; /* Center text in smaller screens */
+        max-width: 100%;
     }
 
     .footer-column h4 {
         font-size: 14px;
-        text-transform: uppercase;
-        font-weight: bold;
     }
 
-    .footer-column p,
     .footer-column h6 {
-        font-size: 12px; /* Make text slightly smaller */
-        margin-bottom: 5px;
-        line-height: 1.5;
+        font-size: 12px;
     }
 
+    .footer-bottom {
+        font-size: 10px;
+        padding-top: 10px;
+    }
     .location-info {
         justify-content: center; /* Center location info */
     }
 
     .location-info img {
         margin-right: 5px; /* Smaller margin on mobile */
-    }
-
-    .footer-bottom {
-        font-size: 10px; /* Smaller font for mobile */
-        padding-top: 10px;
     }
 }
